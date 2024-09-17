@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class CharacterWordMapper extends Mapper<Object, Text, Text, IntWritable> {
 
-    private final static IntWritable one = new IntWritable(1);
+    private final static IntWritable one = new IntWritable(1); 
     private Text characterWord = new Text();
 
     @Override

@@ -12,7 +12,7 @@ public class CharacterWordReducer extends Reducer<Text, IntWritable, Text, IntWr
     public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
         int wordCount = 0;
 
-        // Sum all the word counts for this character
+        // Sum all the word counts for this character 
         for (IntWritable value : values) {
             wordCount += value.get();
         }
